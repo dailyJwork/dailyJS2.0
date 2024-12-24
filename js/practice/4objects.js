@@ -281,7 +281,7 @@ function getAllPropValues(propName) {
 
 console.log(getAllPropValues("quantity"));
 
-TASK
+// TASK
 
 const stones = [
     {
@@ -309,7 +309,7 @@ function calculateTotal (stones, stoneName){
 
 console.log(calculateTotal(stones, "Saph"));
 
-TASK
+// TASK
 
 function calculateTotalPrice(productName) {
   const products = [
@@ -363,7 +363,7 @@ bookShelf.addBook("The Mist");
 bookShelf.addBook("Dream Guardian");
 console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist", "Dream Guardian"]
 
-TASK
+// TASK
 const atTheOldToad = {
   potions: [
     { name: "Speed potion", price: 460 },
@@ -385,7 +385,7 @@ const atTheOldToad = {
 };
 console.log(atTheOldToad.getTotalPrice());
 
-TASK
+// TASK
 const atTheOldToad = {
     potions: [
       { name: "Speed potion", price: 460 },
@@ -410,7 +410,7 @@ const atTheOldToad = {
 
 ///// SPREAD , REST (...)
 
-TASK
+// TASK
 function add (...args){
     let sum = 0;
     for(const arg of args){
@@ -421,7 +421,7 @@ function add (...args){
 
 console.log(add(10, 7));
 
-task
+// task
 function addOverNum(value, ...args) {
     let sum = 0;
     for(const agr of args){
@@ -434,7 +434,7 @@ function addOverNum(value, ...args) {
 
 console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
 
-TASK
+// TASK
 
 function getExtremeScores(scores) {
     let result = {};
@@ -448,7 +448,7 @@ function getExtremeScores(scores) {
 console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26]));
 console.log(getExtremeScores([19, 7, 4, 17, 81, 24]));
 
-TASK
+// TASK
 
 const firstGroupScores = [64, 42, 93];
 const secondGroupScores = [89, 14, 51, 26];
@@ -457,3 +457,75 @@ const thirdGroupScores = [29, 47, 18, 97, 81];
 const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores]; -> spread
 const bestScore = Math.max(...allScores); -> rest
 const worstScore = Math.min(...allScores); -> rest
+
+
+// TASK
+
+const transaction = {
+  deposit: "dep",
+  withdraw: "withdraw",
+};
+
+const account = {
+  balance: 0,
+  transactions: [], // {id: string, amount: number, type: "dep" || "withdraw" }
+
+  createTransaction(amount, type) {
+    const Transaction = {
+      id: (this.transactions.length + 1).toString(),
+      amount,
+      type, 
+    };
+    return Transaction; 
+  },
+
+  deposit (amount) {
+    this.balance += amount;
+    const depositTransaction = this.createTransaction(amount, transaction.deposit);
+    this.transactions.push(depositTransaction);
+  },
+
+  withdraw (amount) {
+    if(amount > this.balance){
+        console.error("You dont have enough money");
+        return;
+    }
+    this.balance -= amount;
+    const withdrawTransaction = this.createTransaction(amount, transaction.withdraw);
+    this.transactions.push(withdrawTransaction);
+  },
+
+  showBalance () {
+    return this.balance;
+  },
+  
+  getTransactionId(id) {
+    for(const transaction of this.transactions){
+        if(transaction.id === id){
+            console.log(transaction);
+            return transaction;
+        }
+    }
+    console.warn(`No transaction by this "${id}" id`);
+  },
+
+  getTransactionTotal (type) {
+    let totalAmount = 0;
+    for(const transaction of this.transactions) {
+        if(transaction.type === type){
+            totalAmount += transaction.amount;
+        }
+    };
+    return totalAmount;
+  }
+
+};
+
+account.deposit(1000);
+account.deposit(1000);
+account.withdraw(500);
+account.withdraw(500);
+console.log(account);
+account.getTransactionId('7');
+account.getTransactionId('1');
+console.log(account.getTransactionTotal(transaction.withdraw));

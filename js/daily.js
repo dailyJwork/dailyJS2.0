@@ -1083,5 +1083,415 @@
 // const bestScore = Math.max(...allScores); -> rest
 // const worstScore = Math.min(...allScores); -> rest
 
+// TASK
 
+// const transaction = {
+//   deposit: "dep",
+//   withdraw: "withdraw",
+// };
+
+// const account = {
+//   balance: 0,
+//   transactions: [], // {id: string, amount: number, type: "dep" || "withdraw" }
+
+//   createTransaction(amount, type) {
+//     const Transaction = {
+//       id: (this.transactions.length + 1).toString(),
+//       amount,
+//       type,
+//     };
+//     return Transaction;
+//   },
+
+//   deposit (amount) {
+//     this.balance += amount;
+//     const depositTransaction = this.createTransaction(amount, transaction.deposit);
+//     this.transactions.push(depositTransaction);
+//   },
+
+//   withdraw (amount) {
+//     if(amount > this.balance){
+//         console.error("You dont have enough money");
+//         return;
+//     }
+//     this.balance -= amount;
+//     const withdrawTransaction = this.createTransaction(amount, transaction.withdraw);
+//     this.transactions.push(withdrawTransaction);
+//   },
+
+//   showBalance () {
+//     return this.balance;
+//   },
+
+//   getTransactionId(id) {
+//     for(const transaction of this.transactions){
+//         if(transaction.id === id){
+//             console.log(transaction);
+//             return transaction;
+//         }
+//     }
+//     console.warn(`No transaction by this "${id}" id`);
+//   },
+
+//   getTransactionTotal (type) {
+//     let totalAmount = 0;
+//     for(const transaction of this.transactions) {
+//         if(transaction.type === type){
+//             totalAmount += transaction.amount;
+//         }
+//     };
+//     return totalAmount;
+//   }
+
+// };
+
+// account.deposit(1000);
+// account.deposit(1000);
+// account.withdraw(500);
+// account.withdraw(500);
+// console.log(account);
+// account.getTransactionId('7');
+// account.getTransactionId('1');
+// console.log(account.getTransactionTotal(transaction.withdraw));
+
+// const newTransaction = account.createTransaction(1000, transaction.deposit);
+// console.log(newTransaction);
+
+////////////////////////// LESSON 5
+////////// CALLBACK FUNCTION
+
+// function makePizza() {
+//     return "Your pizza is being prepared, please wait.";
+//   }
+
+//   const result = makePizza();
+//   const pointer = makePizza; -> посилання на функцию makePizza;
+// function greet(name) {
+//     console.log(`Welcome ${name}!`);
+//   }
+
+//   function notify(name) {
+//     console.log(`Dear ${name}, your room will be ready in 30 minutes`);
+//   }
+
+//   function registerGuest(name, callback) {
+//     console.log(`Registering ${name}!`);
+//     callback(name);
+//   }
+
+//   registerGuest("Mango", greet); // "Registering Mango!" // "Welcome Mango!"
+
+//   registerGuest("Mango", notify); // "Registering Mango!" // "Dear Mango, your room will be ready in 30 minutes"
+
+// TASK
+// const account = {
+//     name: "max",
+//     status: "VIP",
+// }
+
+// function checkStatus (account, callback){
+//     const status = account.status.toLowerCase();
+//     if(status === "vip") {
+//         callback();
+//     } else {
+//         console.log("SORRY, you are broke");
+//     }
+// };
+
+// function VIPstatus () {
+//     console.log(`${account.name},VIP STATUS ON`);
+// };
+
+// checkStatus(account, VIPstatus);
+
+// TASK
+
+// function betterThanAverage(classPoints, yourPoints) {
+//   let total = 0;
+//   let avagange = 0;
+//   for (let i = 0; i < classPoints.length; i++) {
+//     total += classPoints[i];
+//     avagange = total / classPoints.length;
+//   }
+//   if(yourPoints > avagange){
+//     console.log(true);
+//   } else{console.log(false)};
+// }
+
+// betterThanAverage([2, 3], 5);
+// betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)
+// betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9)
+// betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50)
+// betterThanAverage([29, 55, 74, 60, 11, 90, 67, 28], 21);
+
+// TASK
+
+// const numbers = [5, 10, 15, 20, 25];
+// let total = 0
+
+// const sum = numbers.forEach((number) => total += number);
+// console.log(total);
+
+// reduce ()
+
+// const array = [2, 6, 10, 9];
+// const sumArray = array.reduce((acc, number) => {
+//     console.log(acc);
+//     return acc + number;
+// }, 0);
+// console.log(sumArray);
+
+// TASK
+
+// const salaryList = {
+//     mango: 200,
+//     ajax: 100,
+//     max: 420,
+// };
+
+// const salaryTotal = Object.values(salaryList).reduce((acc, number) => {
+//     return acc + number;
+// }, 0);
+// console.log(salaryTotal);
+
+// TASK
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// const totalPlayTime = playtimes.reduce((acc, number) => {
+//     return acc + number;
+// }, 0);
+
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// TASK
+
+// const students = [
+//   { name: "Mango", score: 83 },
+//   { name: "Poly", score: 59 },
+//   { name: "Ajax", score: 37 },
+//   { name: "Kiwi", score: 94 },
+//   { name: "Houston", score: 64 },
+// ];
+
+// const total = students.reduce((acc, student) => {
+//  return acc + student.score;
+// },0);
+// console.log(total / students.length);
+
+// TASK
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//     let result = player.playtime / player.gamesPlayed;
+//     return acc + result;
+// }, 0);
+
+// TASK
+
+// const array = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+// ];
+
+// const calculateTotalBalance = (users) => {
+//     return users.reduce((acc, user) => {
+//         return acc + user.balance;
+//     }, 0)
+// };
+
+// console.log(calculateTotalBalance(array));
+
+// TASK
+// const cart = [
+//     { name:"apple", price: 100, quantity: 4, },
+//     { name:"banana", price: 150, quantity: 2, },
+//     { name:"applePie", price: 300, quantity: 1, },
+// ];
+
+// const totalPrice = cart.reduce((acc, fruit) => {
+//     let result = fruit.price * fruit.quantity;
+//     return acc + result;
+// }, 0)
+
+// console.log(totalPrice);
+
+/// toSorted()
+
+// TASK
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+
+// const ascendingReleaseDates = releaseDates.toSorted();
+// console.log(ascendingReleaseDates);
+// const alphabeticalAuthors = authors.toSorted();
+// console.log(alphabeticalAuthors);
+
+// TASK
+
+// const releaseDates = [1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = releaseDates.toSorted((a, b) => {return a - b});
+// console.log(ascendingReleaseDates);
+
+// const descendingReleaseDates = releaseDates.toSorted((a, b) => {return b - a});
+// console.log(descendingReleaseDates);
+
+// TASK
+
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+
+// const authorsInAlphabetOrder = authors.toSorted((a, b) => { return a.localeCompare(b)});
+
+// const authorsInReversedOrder = authors.toSorted((a, b) => { return b.localeCompare(a)});
+
+// TASK
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     rating: 7.94,
+//   },
+//   {
+//     title: "Enemy of God",
+//     author: "Bernard Cornwell",
+//     rating: 8.67,
+//   },
+// ];
+
+// const sortedByAuthorName = books.toSorted((a, b) => {
+//     return a.author.localeCompare(b.author);
+// });
+
+// const sortedByReversedAuthorName = books.toSorted((a, b) => {
+//     return b.author.localeCompare(a.author);
+// });
+
+// const sortedByAscendingRating = books.toSorted((a, b) => {
+//     return a.rating - b.rating;
+// });
+// const sortedByDescentingRating = books.toSorted((a, b) => {
+//     return b.rating - a.rating;
+// });
+
+// TASK
+
+// const students = [
+//   { name: "Mango", score: 83, courses: ["mathematics", "physics"] },
+//   { name: "Poly", score: 59, courses: ["science", "mathematics"] },
+//   { name: "Ajax", score: 37, courses: ["physics", "biology"] },
+//   { name: "Kiwi", score: 94, courses: ["literature", "science"] },
+// ];
+
+// const result = students.toSorted((a, b) => {
+//     return a.score - b.score;
+// }).map((student) => {
+//     return student.name;
+// })
+// console.log(result);
+
+// const uniqueSortedCourses = students.flatMap(student => student.courses).filter((course, i, array) => {
+//     return array.indexOf(course) === i;}).toSorted((a, b) => {
+//         return a.localeCompare(b);
+//     });
+//     console.log(uniqueSortedCourses);
+
+/// TASK
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books.filter((book) => {
+//     return book.rating > MIN_BOOK_RATING;
+// }).map((book) => {return book.author}).toSorted((a, b) => {
+//     return a.localeCompare(b);
+// })
+// console.log(names);
 
