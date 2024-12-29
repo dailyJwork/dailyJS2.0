@@ -1495,3 +1495,225 @@
 // })
 // console.log(names);
 
+//task
+
+// const array = [0, 10, 5, 7, 88, 104];
+// const result = array.sort((a, b) => {
+//     return a - b;
+// })
+// const result1 = result.slice(1, result.length - 1)
+// console.log(result1);
+
+// TASK
+
+// const array = [ 2, 4, 10];
+
+// const result = array.reduce((acc, number) => {
+//     return acc * number;
+// });
+
+// console.log(result);
+
+// TASK
+
+// const str = "Max dua as ty dhaisandoais hasda duahqh";
+
+// const strArray = str.split(" ");
+// console.log(strArray);
+// let min = strArray[0];
+// for(const word of strArray) {
+//     if(min.length > word.length) {
+//         min = word;
+//     }
+// }
+
+// console.log(min);
+
+// TASK
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+
+// const positiveNumbs = array.filter((number) => {return number >= 0});
+// const negatibeNumbs = array.filter((number) => {return number <= 0});
+// const result = [];
+// result.push(positiveNumbs.length);
+// let sumOfNegative = 0;
+// for(const number of negatibeNumbs) {
+//     sumOfNegative += number;
+// }
+// result.push(sumOfNegative);
+// console.log(result);
+
+// TASK
+// const str = "Sam Harris";
+// let final = "";
+
+// const result = str
+//   .split(" ")
+//   .map((name) => {
+//     return (final = name[0]);
+//   })
+//   .join(".");
+
+// console.log(result);
+
+// function abbrevName(name){
+// let final = '';
+//     // code away
+// const result = name.split(" ").map((word) => {return final = word[0]}).join(".");
+// return result.toUpperCase( );
+// }
+
+// console.log(abbrevName("p Favuzzi"));
+
+// let sum = 0;
+// for(const number of array) {
+//     sum += number;
+//     if(sum % 2 === 0) {
+//         return "odd";
+//     } else if (sum % 2 !== 0) {
+//         return "even";
+//     } else {return 0}
+// }
+
+// TASK
+// function oddOrEven(array) {
+//     let sum = 0;
+//     for(const number of array) {
+//         sum += number;
+//     }
+//     if(sum % 2 === 0){
+//         return "even"
+//     } else {
+//         return "odd"
+//     }
+// }
+
+// console.log(oddOrEven([1,2]));
+
+// TASK
+
+// function XO(str) {
+//   //code here
+//   const lowerCaseStr = str.toLowerCase();
+//   let o = [];
+//   let x = [];
+//   const array = lowerCaseStr.split("");
+//   for (const letter of array) {
+//     if (letter === "o") {
+//       o.push(letter);
+//     } else if (letter === "x") {
+//       x.push(letter);
+//     }
+//   }
+//   if (o.length === x.length) {
+//     return true;
+//   } else if (o.length !== x.length) {
+//     return false;
+//   } else { return true;
+//   }
+// }
+
+// console.log(XO("asdas"));
+
+// const obj = {
+//     name: "Max",
+//     isHuman: true,
+// };
+
+// const animal = Object.create(obj);
+// animal.name = "Dog";
+// animal.isHuman = false;
+// animal.type = "home doggy";
+// console.log(animal);
+// console.log(obj.isPrototypeOf(animal));
+
+// for(const key in animal) {
+//     if(animal.hasOwnProperty(key)){
+//         console.log(key);
+//     }
+// }
+
+// for(const key of Object.values(animal)){
+//     console.log(key);
+// }
+
+// TASK
+
+// rock, scissors, paper
+
+// rock -> scissors
+// scissors -> paper;
+// paper -> rock
+
+// const rps = (p1, p2) => {
+//   if (p1 === "rock" && p2 === "scissors") {
+//     console.log("p1 win");
+//   } else if (p1 === "scissors" && p2 === "rock") {
+//     console.log("p2 wins");
+//   } else if (p1 === "scissors" && p2 === "paper") {
+//     console.log("p1 win");
+//   } else if (p1 === "paper" && p2 === "scissors") {
+//     console.log("p2 wins");
+//   } else if (p1 === "paper" && p2 === "rock") {
+//     console.log("p1 win");
+//   } else if (p1 === "rock" && p2 === "paper") {
+//     console.log("p2 wins");
+//   } else {
+//     console.log("draw");
+//     return "draw";
+//   }
+// };
+
+// rps("rock", "paper")
+
+// TASk
+// function areYouPlayingBanjo(name) {
+//   // Implement me
+//   if(name[0] === "R" || name[0] === "r"){
+//     return `${name} plays banjo`;
+//   } else {return `${name} does not play banjo`}
+// }
+
+// TASK
+
+// function makeNegative(num) {
+//     // Code?
+//     return -num;
+//   }
+// console.log(makeNegative(9));
+
+//TASK
+
+// const str = "The quick brown fox jumps over the lazy dog.";
+
+// function reverse (str) {
+//    const array = str.split(" ").reverse().join(" ");
+//    console.log(array);
+
+// }
+// reverse(str);
+
+// TASK
+// function findNeedle(haystack) {
+//   return "found the needle at position " + haystack.indexOf("needle");
+// }
+
+// console.log(
+//   findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
+// );
+
+// TASK
+
+// const array = [1, 2, 3];
+
+// function maps(x){
+//    return x.map((number) => {return number * 2});
+// }
+
+// console.log(maps(array));
+
+
+
+
+
