@@ -1,0 +1,171 @@
+.js-btn {
+  width: 100px;
+  height: 40px;
+  background-color: pink;
+  border-radius: 4px;
+  border: 1px transparent solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.js-btn:hover,
+.js-btn:focus {
+  cursor: pointer;
+  background-color: powderblue;
+  color: darkorange;
+}
+
+.js-main-ul {
+  list-style: none;
+}
+
+.main-title {
+  text-decoration: overline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: blueviolet;
+}
+
+/* styles collection */
+
+.color-container {
+  display: flex;
+  gap: 20px;
+}
+
+.element-color {
+  width: 70px;
+  height: 60px;
+  background-color: rebeccapurple;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+.transaction-el {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.js-addEvent-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.js-addEvent-btn:hover,
+.js-addEvent-btn:focus {
+  background-color: fuchsia;
+  color: greenyellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.js-adding-div {
+  background-color: pink;
+}
+
+.js-input {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.js-input-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.js-input-btn:hover,
+.js-input-btn:focus {
+  background-color: fuchsia;
+  color: greenyellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.key-btn {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.h2-margin {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.key-btn:hover,
+.key-btn:focus {
+  background-color: fuchsia;
+  color: greenyellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+}
+
+.form-btn {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  color: aqua;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: fuchsia;
+  color: greenyellow;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.js-car-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.div-color-class{
+  width: 30px;
+  height: 30px;
+}

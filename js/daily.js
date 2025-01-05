@@ -1713,7 +1713,490 @@
 
 // console.log(maps(array));
 
+// TASK
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     return length * width * height;
+//   }
+// }
 
+// TASK
+// function enough(cap, on, wait) {
+//   // your code here
+//   if (on + wait < cap) {
+//     return 0;
+//   } else {
+//     return on - wait;
+//   }
+// }
 
+// console.log(enough(55, 49, 40))
 
+// TASK
 
+// function squareSum(numbers){
+//     const array = numbers.map((number) => {return number**2});
+//     let result = 0;
+//     for(const number of array) {
+//         result += number;
+//     }
+//     return result;
+// }
+
+// console.log(squareSum([0, 3, 4, 5]));
+
+// TASK
+
+// function numberToString(num) {
+//   // Return a string of the number here!
+//   return num.toString();
+// }
+
+// console.log(numberToString(-110));
+// console.log(-110);
+
+// TASK
+
+// function isTriangle(a, b, c) {
+//     if(a === 0 || b === 0 || c === 0 || a + b < c || a + c < b || b + c < a || a + b === c || a + c === b || b + c === a){
+//         return false;
+//     } else {return true};
+// }
+// console.log(isTriangle(1,2,2));
+// console.log(isTriangle(7,2,2));
+// console.log(isTriangle(6,1,5));
+
+// TASK
+
+// function firstNonConsecutive (arr) {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i + 1] - arr[i] !== 1 ) {
+//             return arr[i]
+//         }
+//     }
+//     return null;
+// }
+
+// console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
+// console.log(firstNonConsecutive([2,3,5,7,8,9,10,11]));
+
+// TASK
+// 1-2 && 12 - 1; 3-5 - 2; 6-8 - 3; 9-11 - 4;
+
+// const quarterOf = (month) => {
+// if(month === 1 || month === 2 || month === 12) {return "winter"};
+// if(month === 3 || month === 4 || month === 5) {return "spring"};
+// if(month === 6 || month === 7 || month === 8) {return "summer"};
+// if(month === 9 || month === 10 || month === 11) {return "autumn"};
+// };
+
+// console.log(quarterOf(4));
+
+// TASK
+
+// function solution(str) {
+//     return str.split("").reverse().join("");
+// }
+
+// console.log(solution('world'));
+
+/// QUESTIONS
+
+// TASK
+
+// const server = {
+//   users: [],
+
+//   showUsers() {
+//     console.log(this.users);
+//   },
+
+// };
+
+// const createUserOnServer = (newUser, onSuccess, onError) => {
+//   if (newUser) {
+//     onSuccess();
+//     server.users.push(newUser);
+//   } else {
+//     onError();
+//   }
+// };
+
+// const successUser = () => {
+//   console.log("User created");
+// };
+
+// const errorCreateUser = () => {
+//   console.error("Error, try ones more");
+// };
+
+// createUserOnServer(
+//   { name: "Max", age: 23, id: 4 },
+//   successUser,
+//   errorCreateUser
+// );
+
+// server.showUsers();
+
+// TASK
+
+// function getAge(inputString) {
+//   // return the girl's correct age as an integer. Happy coding :)
+//     return Number.parseInt(inputString);
+// }
+
+// console.log(getAge("9 years old"));
+
+// TASK
+
+// function removeSmallest(numbers) {
+//   let smallest = numbers[0];
+//   for(let i = 0; i < numbers.length; i++){
+//     if(smallest > numbers[i]) {
+//         smallest = numbers[i];
+//     }
+//   }
+//   return numbers.filter((num) => {return num !== smallest});
+// }
+
+// console.log(removeSmallest([5, 10, 7, 2, 1, 1000, 0]));
+
+// TASK
+
+// const array = [1, 5, 6, 1, 5, 7, 1, 8, 10];
+
+// const uniqArray = array.filter((num, i) => {
+//   return array.indexOf(num) === i;
+// });
+
+// console.log(uniqArray);
+
+// TASK
+
+// function basicOp(operation, value1, value2) {
+//   //Code
+//   if(operation === '+') {return value1 + value2}
+//   else if(operation === '/') {return value1 / value2}
+//   else if(operation === '-') {return value1 - value2}
+//   else if(operation === "*") {return value1 * value2}
+// }
+
+// TASK
+
+// const deleteById = (array, id) => {
+//     return array.filter((user) => user.id !== id);
+// }
+
+// console.log(deleteById([{ name: "max", id:2 },{ name: "max", id:3 }], 2));
+
+// TASK
+// function validatePIN(pin) {
+//    if(!Number(pin)) {return false}
+
+//    if(pin.length === 4 || pin.length === 6){
+//     return true;
+//    } else {return false}
+
+// };
+
+// TASK
+
+// function sumTwoSmallestNumbers(numbers) {
+//     //Code here
+//     const result = numbers.sort((a, b) => {return a - b});
+//     return result[0] + result[1];
+//   }
+
+// const array = [1, 6, 12, 5, 7]
+
+// console.log(sumTwoSmallestNumbers(array));
+
+// TASK
+
+// function noSpace(x) {
+//   return x
+//     .split("")
+//     .filter((symbol) => {
+//       return symbol !== " ";
+//     })
+//     .join("");
+// }
+
+// console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
+
+// TASK
+
+// function countSheeps(sheep) {
+//   // TODO
+//   const result = [];
+//   for (const value of sheep) {
+//     if (value === true) {
+//       result.push(value);
+//     }
+//   }
+//   return result.length;
+// }
+
+// console.log(
+//   countSheeps([undefined, null, false, true, true, false, null, undefined])
+// );
+
+// TASK
+
+// function move(position, roll) {
+//   // return the new position
+//   return roll * 2 + position;
+// }
+
+// console.log(move(3, 6));
+
+/// TASK
+
+// function switchItUp(number) {
+//   //Write your own Code!
+//   if(number === 0) {
+//     return "Zero"
+//   } else if(number === 1) {
+//     return "One"
+//   } else if(number === 2) {
+//     return "Two"
+//   } else if(number === 3) {
+//     return "Three"
+//   } else if(number === 4) {
+//     return "Four"
+//   } else if(number === 5) {
+//     return "Five"
+//   } else if(number === 6) {
+//     return "Six"
+//   } else if(number === 7) {
+//     return "Seven"
+//   } else if(number === 8) {
+//     return "Eight"
+//   } else if(number === 9) {
+//     return "Nine"
+//   }
+// }
+
+// TASK
+
+// function addBinary(a,b) {
+//     const sum = a + b;
+//     const result = sum**2;
+//     return result.toString()
+// }
+
+// console.log(addBinary(5, 9));
+
+// TASK
+
+// function doubleChar(str) {
+//   // Your code here
+//     let array = str.split("");
+//     let result = [];
+//     for(let i = 0; i < array.length; i++){
+//         result.push(array[i] + array[i]);
+//     }
+//     return result.join("")
+// }
+
+// console.log(doubleChar("1337"));
+
+// TASK
+
+// function findDifference(a, b) {
+//   //loading...
+//   let aResult = a.reduce((acc, el) => acc * el);
+//   let bResult = b.reduce((acc, el) => acc * el);
+//   if (aResult > bResult) {
+//     return aResult - bResult;
+//   } else if (aResult < bResult) {
+//     return bResult - aResult;
+//   } else {
+//     return 0;
+//   }
+// }
+
+// console.log(findDifference([3, 2, 5], [1, 4, 4]));
+// console.log(findDifference([9, 7, 2], [5, 2, 2]));
+// console.log(findDifference([15, 20, 25], [10, 30, 25]));
+
+// TASK
+
+// function descendingOrder(n) {
+//   //...
+//     const array = Array.from(String(n));
+//     const result = array.toSorted((a, b) => {return b - a});
+//     return result.join("")
+// }
+
+// console.log(descendingOrder(1021));
+// console.log(descendingOrder(123456789));
+
+// TASK
+
+// function getCount(str) {
+//     const array = Array.from(str);
+//     let OArray = [];
+//     for(const letter of array) {
+//         if(letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u"){
+//             OArray.push(letter);
+//         }
+//     }
+//     return OArray.length;
+// }
+
+// console.log(getCount(""));
+
+// TASK
+
+// function cubeChecker(volume, side) {
+//     if(volume % side === 0 && volume > 0 && side > 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(cubeChecker(12, 2 ));
+
+// TASK
+
+// function solution(str, ending) {
+//   // TODO: complete
+//   if(str.endsWith(ending)) {return true}
+//   else { return false}
+// }
+
+// console.log(solution('abcde', 'aa'));
+
+//// TASK
+// function longestConsec(strarr, k) {
+//   // your code
+//    const array = Array.from(strarr);
+//    let biggest = array[0];
+//    for(const word of array){
+//     if(biggest.length < word.length) {
+//         biggest = word;
+//     }
+//    }
+//    return biggest + strarr[k];
+// }
+
+// console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2));
+
+/// TASK
+
+// function removeEveryOther(arr) {
+//   //your code here
+//     let array = Array.from(arr);
+//     return array.filter((word) => {
+//         return array.indexOf(word) % 2 === 0
+//     })
+// }
+
+// console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again', 'dkakda', 'dakdka']));
+
+// TASK
+// function disemvowel(str) {
+//     const array = str.split("");
+//     const result = array.filter((letter) => {
+//       return letter !== "e" && letter !== "y" && letter !== "u" && letter !== "i" && letter !== "o" && letter !== "a" && letter !== "j"
+//     })
+//     return result.join("")
+// }
+
+// console.log(disemvowel("This website is for winners LOL!"));
+
+// TASK
+
+// function stray(numbers) {
+//     return numbers.filter((num) => {
+//       if(numbers.indexOf(num) > 0){return num}
+//     }).toString()
+// }
+// console.log(stray([1, 1, 2]));
+// console.log(stray([17, 17, 3, 17, 17, 17, 17]));
+
+// TASK
+
+// const uniqueInOrder = function (iterable) {
+//   //your code here - remember iterable can be a string or an array
+//     const array = Array.from(iterable);
+//     console.log(array);
+//     let result = '';
+
+//     for(let i = 0; i < array.length; i++){
+//         if(array.indexOf(array[i]) >= i){
+//             result += array[i];
+//         }
+//     }
+//     return result.split("");
+// };
+
+// console.log(uniqueInOrder("AAAABBBCCDAABBB"));
+
+// TASK
+// const min = function (list) {
+//     let min = list[0];
+//     for(let i = 0; i < list.length; i++){
+//         if(min > list[i]) {
+//             min = list[i];
+//         }
+//     }
+//     return min
+// };
+
+// const max = function (list) {
+//     let max = list[0];
+//     for(let i = 0; i < list.length; i++){
+//         if(max < list[i]) {
+//             max = list[i];
+//         }
+//     }
+//     return max
+// };
+
+// console.log(min([-52, 56, 30, 29, -54, 0, -110]));
+// console.log(max([4,6,2,1,9,63,-134,566]));
+
+/// TASK
+// function sum(numbers) {
+//   let sum = 0;
+//   for (const num of numbers) {
+//          sum += num;
+//   }
+//   return sum;
+// }
+
+// console.log(sum([0]));
+
+/// TASK
+
+// function digitize(n) {
+//   //code here
+//   return n.toString().split("").reverse().map((num) => + num);
+// }
+
+// console.log(digitize(35231));
+
+/// TASK
+
+// function likes(names) {
+//   // TODO
+//   const array = Array.from(names);
+//   if (array.length === 0) {
+//     return "no one likes this";
+//   } else if (array.length > 3) {
+//     return `${array[0]}, ${array[1]} and ${array.length - 2} others like this`;
+//   } else if (array.length === 2) {
+//     return `${array[0]} and ${array[1]} like this`;
+//   } else if (array.length === 3) {
+//     return `${array[0]}, ${array[1]} and ${array[2]} like this`;
+//   } else if (array.length === 1) {
+//     return `${array[0]} likes this`
+//   }
+// }
+
+// // console.log(likes(['Max', 'John', 'Mark']));
+// console.log(likes(["Alex", "Jacob", "Mark", "Max", "dajsjdk", "daj"]));
+// console.log(likes(["Alex", "Jacob", "jdajd"]));

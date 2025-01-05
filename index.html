@@ -5,13 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dailyJS2.0</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/photo_2024-12-01_10-45-30.jpg"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body class="body" >
     <main>
-      <h1>HAPPY NEW LIFE OF CODING</h1>
+      <img
+        src="./img/photo_2024-12-01_10-45-30.jpg"
+        alt="cart"
+        width="250"
+        height="180"
+        class="daily-img-js"
+      />
+      <button class="js-btn" data-btn="main-js-btn">EVENT</button>
+      <ul class="js-main-ul">
+        <li class="js-main-li-1">
+          <p class="paragraph-1">JS</p>
+        </li>
+        <li class="js-main-li-2">
+          <p class="paragraph-2">IS</p>
+        </li>
+        <li class="js-main-li-3">
+          <p class="paragraph-3">SO</p>
+        </li>
+        <li class="js-main-li-4">
+          <p class="paragraph-4">INTERESTING</p>
+        </li>
+      </ul>
+
+      <div class="color-container">
+        <div class="element-color js-div" title="red"></div>
+      </div>
+
+      <section class="display">
+        <h2>innerHTML</h2>
+        <ul class="list"></ul>
+
+        <ul class="transaction-list js-main-ul">
+          <h1>Transation Task</h1>
+        </ul>
+
+        <button class="js-addEvent-btn">JS YEEAH</button>
+
+        <h2 class="h2-margin">INPUT</h2>
+        <input type="text" class="js-input" placeholder="your name" />
+        <button type="submit" class="js-input-btn">Submit name</button>
+
+        <h2 class="h2-margin">KEYBORD</h2>
+        <button type="button" class="key-btn">Clear output</button>
+        <div class="key-list"></div>
+        
+        <h2 class="h2-margin">FORM</h2>
+        <form class="form" autocomplete="off">
+          <input type="text" name="login" placeholder="Login">
+          <input type="password" name="password" placeholder="Password">
+          <button class="form-btn" type="submit">Register</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <form action="submit" class="js-form">
+          <div class="car-group">
+            <input type="text" name="query" class="car-input" placeholder="Поиск">
+          </div>
+          <div class="cart-group">
+            <select name="options" class="car-select">
+              <option value="car">MARK</option>
+              <option value="model">MODEL</option>
+            </select>
+          </div>
+          <button type="submit" class="car-btn">Поиск</button>
+        </form>
+
+        <ul class="js-main-ul car-list">
+        </ul>
+      </section>
+
+
+      <section class="HW7">
+        <ul id="categories">
+          <li class="item">
+            <h2 class="item-title">Animals</h2>
+            <ul class="js-main-ul animals-ul">
+              <li>Cat</li>
+              <li>Hamster</li>
+              <li>Horse</li>
+              <li>Parrot</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 class="item-title">Products</h2>
+            <ul class="js-main-ul products-ul">
+              <li>Bread</li>
+              <li>Parsley</li>
+              <li>Cheese</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 class="item-title">Technologies</h2>
+            <ul class="js-main-ul technologies-ul">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="gallery js-main-ul">
+        </ul>
+
+        <input type="text" id="name-input" placeholder="Please enter your name" />
+          <h1>Hello, <span id="name-output">Anonymous</span>!</h1>  
+
+
+          <form class="login-form">
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" />
+            </label>
+            <button type="submit">Log in</button>
+          </form> 
+
+
+          <div class="widget">
+            <p>Background color: <span class="color-span">-</span></p>
+            <button type="button" class="change-color">Change color</button>
+          </div>
+
+          <div id="controls">
+            <input type="number" min="1" max="100" step="1" class="color-amount-input" />
+            <button type="button" data-create>Create</button>
+            <button type="button" data-destroy>Destroy</button>
+          </div>
+          
+          <div id="boxes"></div>
+
+      </section>
+      
     </main>
     <script src="./js/daily.js" type="module"></script>
-    <script src="./js/practice/6OOP_this.js"></script>
-    <script src="./js/homeWorks/m6HW.js""></script>
+    <script src="./js/practice/7DOM.js"></script>
+    <script src="./js/homeWorks/m7HW.js""></script>
   </body>
 </html>
