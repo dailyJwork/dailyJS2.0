@@ -73,7 +73,7 @@ inputName.addEventListener("input", (event) => {
        return event.target.value === "Anonimus";
     }
 
-    spanName.textContent = event.target.value.trim();;
+    spanName.textContent = event.target.value.trim();
 
 })
 

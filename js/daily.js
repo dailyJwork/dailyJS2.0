@@ -2200,3 +2200,56 @@
 // // console.log(likes(['Max', 'John', 'Mark']));
 // console.log(likes(["Alex", "Jacob", "Mark", "Max", "dajsjdk", "daj"]));
 // console.log(likes(["Alex", "Jacob", "jdajd"]));
+
+/// TASK
+
+// function past(h, m, s) {
+//   //#Happy Coding! ^_^
+//   return h * 3600000 + m * 60000 + s * 1000;
+// }
+
+// console.log(past(1,1,1));
+
+// TASK
+
+// function hero(bullets, dragons) {
+//   //Get Coding!
+//   if (bullets / dragons >= 2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(hero(10, 5));
+
+//// TASK
+// function countBy(x, n) {
+//     let array = [];
+//     for(let i = x; i <= n; i++){
+//         array.push(x * i)
+//     }
+//     return array;
+// }
+
+// console.log(countBy(1,10));
+
+/// TASK
+
+// function highAndLow(numbers) {
+//   // ...
+//   const array = numbers.split(" ");
+//   let min = +array[0];
+//   let max = +array[0];
+
+//   for (const num of array) {
+//     if (min > +num) {
+//       min = +num;
+//     }
+//     if (max < +num) {
+//       max = +num;
+//     }
+//   }
+//   return `${max} ${min}`
+// }
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+// console.log(highAndLow("6666 111 31231 0"));
