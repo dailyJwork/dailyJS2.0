@@ -282,3 +282,34 @@ body {
 .daily-img-js{
   margin-bottom: 20px;
 }
+
+/* GALLERY */
+
+.gallery-image{
+  width: 300px;
+  height: 200px;
+  pointer-events: none;
+}
+
+.gallery{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item{
+  cursor: pointer;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  scale: 1.1;
+}
+
+.modal-gallery-image{
+  width: 500px;
+  height: 350px;
+}
