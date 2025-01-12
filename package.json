@@ -1,0 +1,26 @@
+{
+  "name": "dailyjs2.0",
+  "version": "1.0.0",
+  "description": "\"JS TRAINING\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjjjwrk/dailyJS2.0.git"
+  },
+  "keywords": [
+    "JS",
+    "TRAINING"
+  ],
+  "author": "dailyJwork <jjjjwrk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjjjwrk/dailyJS2.0/issues"
+  },
+  "homepage": "https://github.com/jjjjwrk/dailyJS2.0#readme",
+  "dependencies": {
+    "simplelightbox": "^2.14.3"
+  }
+}

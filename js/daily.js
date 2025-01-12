@@ -2253,3 +2253,272 @@
 // }
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
 // console.log(highAndLow("6666 111 31231 0"));
+
+/// TASK
+
+// function queueTime(customers, n) {
+//   //TODO
+//     const array = Array.from(customers);
+//     const sum = array.reduce((acc, num) => {return acc + num}, 0);
+//     return sum / n;
+// }
+
+// console.log(queueTime([2,2,3,3,4,4], 2));
+// console.log(queueTime([1,2,3,4], 1));
+
+/// TASK
+
+// function smash(words) {
+//     return Array.from(words).join(' ')
+// }
+
+// console.log(smash(["hello", "amazing", "world"]));
+
+// function findOdd(A) {
+//   //happy coding!
+
+//     const stringArray = [];
+
+//   const array = Array.from(A);
+//   for(const num of array) {
+//     if(num % 2 !== 0){
+//         stringArray.push(num);
+//     }
+//   }
+//   return stringArray.reduce((acc, num) => {return acc + num}, 0)
+// }
+
+// console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
+
+/// TASK
+
+// const fu = (array) => {
+//   const numsArray = Array.from(array);
+//   const resultArray = [];
+
+//   for (let i = 0; i < numsArray.length; i++) {
+//     if (i === numsArray.indexOf(numsArray[i])) {
+//       resultArray.push(numsArray[i]);
+//     }
+//   }
+//   return resultArray.reduce((acc, num) => {
+//     return acc + num;
+//   }, 0);
+// };
+
+// console.log(fu([1, 5, 1, 7, 2, 7, 8, 2, 1, 2]));
+
+// TASK
+// function check(a, x) {
+//   // your code here
+//   if (a.includes(x)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(check([1, 2, 4,], 1));
+
+/// TASK
+
+// function feast(beast, dish) {
+//     beast = beast.toLowerCase();
+//     dish = dish.toLowerCase();
+//   //your function here
+//   if(beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]) {
+//     return true;
+//   } else {return false}
+// }
+
+// console.log(feast("great blue heron", "garlic naan"));
+
+//   function gooseFilter(birds) {
+//     var geese = [
+//       "African",
+//       "Roman Tufted",
+//       "Toulouse",
+//       "Pilgrim",
+//       "Steinbacher",
+//     ];
+
+//     return birds.filter((word) => {return geese.includes(word)})
+//   }
+
+// console.log(
+//   gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+// );
+
+/// TASK
+
+// function strCount(str, letter){
+//     //code here
+//     let result = 0;
+//     const array = str.split("");
+//     for(const value of array){
+//         if(value === letter) {
+//             result += 1
+//         }
+//     }
+//     return result
+// }
+
+// console.log(strCount('Hello', 'l'));
+
+/// TASK
+
+// function minMax(arr) {
+//   let result = [];
+//   const min = Math.min(...arr);
+//   const max = Math.max(...arr);
+//   result.push(min, max);
+//   return result
+// }
+
+// console.log(minMax([5, 5]));
+
+/// TASK
+
+// function twoSort(s) {
+//   const array = s.sort();
+//   const firstWord = array[0].split("");
+//     let lastEl = firstWord[firstWord.length - 1];
+//   return firstWord.filter((el) => {
+//     return el !== lastEl
+//   }).map((letter) => {
+//     return letter + "***";
+//   }).join("") + lastEl
+// }
+
+// console.log(
+//   twoSort([
+//     "bitcoin",
+//     "take",
+//     "over",
+//     "the",
+//     "world",
+//     "maybe",
+//     "who",
+//     "knows",
+//     "perhaps",
+//   ])
+// );
+
+/// TASK
+// function finalGrade(exam, projects) {
+//     if(exam >= 90 && projects >= 10) {return 100} else
+//     if(exam >= 75 && exam < 90 && projects >= 5 && projects < 10) {return 90} else
+//     if(exam >= 50 && exam < 75 && projects >= 2 && projects < 5) {return 75} else {return 0}
+// }
+
+// console.log(finalGrade(0, 11));
+
+/// TASK
+
+// function rentalCarCost(d) {
+//   // Your solution here
+//   let totalPrice = 0;
+//   if (d >= 0 && d < 3) {
+//     totalPrice = 40 * d;
+//   } else if (d >= 3 && d < 7) {
+//     totalPrice = 40 * d - 20;
+//   } else if (d >= 7) {
+//     totalPrice = 40 * d - 50;
+//   }
+//   return totalPrice
+// }
+
+// console.log(rentalCarCost(10));
+
+/// TASK
+// function removeChar(str) {
+//   //You got this!
+//   return str.slice(1, length - 1);
+// }
+
+// console.log(removeChar("country"));
+
+//// TASK
+
+// function howMuchILoveYou(nbPetals) {
+//   // your code
+//   if(nbPetals > 6 && nbPetals === 7) {
+//     return "I love you"
+//   } else if (nbPetals > 6 && nbPetals === 8) {return "a little"}
+//   else if(nbPetals > 6 && nbPetals === 9) {return "a lot"}
+//   else if(nbPetals > 6 && nbPetals === 10) {return "passionately"}
+//   else if(nbPetals > 6 && nbPetals === 11) {return "madly"}
+//   else {return "not at all"}
+// }
+// console.log(howMuchILoveYou(3));
+
+/// TASK
+// function isIsogram(str) {
+//     let result = true;
+//   const array = str.toLowerCase().split("");
+//   for (let i = 0; i < array.length; i++) {
+//     if (array.indexOf(array[i]) === i) {
+//       result = true;
+//     } else if(array.indexOf(array[i]) !== i){
+//       result = false
+//     }
+//   }
+//   return result
+// }
+
+// console.log(isIsogram("isIsogram"));
+
+/// TASK
+
+// function friend(friends) {
+//   //your code here
+//   return friends.filter((word) => {
+//   return word.length === 4
+//   })
+// }
+
+// console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]));
+
+//// TASK
+
+// function countSmileys(arr) {
+//   const array = Array.from(arr);
+//   return array.filter((smile) => {
+//     return smile === ":)" || smile === ":D" || smile === ";)" || smile === ";D" || smile === ";-D" || smile === ";~D" || smile === ";-)" ||
+//     smile === ";~)" || smile === ":-D" || smile === ":-)" || smile === ":~)" || smile === ":~D"
+//   }).length
+// }
+
+// console.log(countSmileys([':D',':~)',';~D',':)']))
+// console.log(countSmileys([':)',':(',':D',':O',':;']     ));
+// console.log(countSmileys([';]', ':[', ';*', ':$', ';-D']));
+
+
+/// import / export
+// named import
+// import { sayHi, sum } from "./practice/9localStorage.js";
+// console.log(sum(1, 2), sayHi);
+
+// // default import
+// import something from "./practice/9localStorage.js";
+// console.log(something);
+
+// // all inport
+// import * as allImport from "./practice/9localStorage.js"; /// весь импорт
+// console.log(allImport);
+
+// ⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀
+// ⠀⠀⠀⠀⡏⢢⡁⠂⠤⣀⣀⣀⣀⣀ ⠤⠐⢈⡔⢹
+// ⠀⠀⠀⠀⢿⡀⠙⠆⠀⠉⠀⠀⠀⠀⠉⠀⠰⠋⢀⡿
+// ⠀⠀⠀⠀⠈⢷⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡾⠁
+// ⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹
+// ⣰⠊⠉⠉⠉⡇⠀⠢⣤⣄⠀⠀ ⣠⣤⠔⠀⢸
+// ⠙⠓⠒⢦⠀⠱⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠎
+// ⠀⠀⠀⠀⡇⠀⠀⠏⠑⠒⠀⠉⠀⠒⠊⠹
+// ⡎⠉⢹⠀⠙⡶⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢦⠀⠀⡏⠉⢱
+// ⢧⡈⠛⠉⠉⠀⠀⣠⠀⠀⠀⠀⠀ ⠀⠀⣄⠀⠉⠉⠋⢁⡼
+// ⠀⢉⣿⠖⠚⠛⢋⢀⠀⠀⠀⠀⠀⠀⠀⡀⡙⠛⠓⠲⣿⣄
+// ⠀⢸⡇⠀⠀⠀⡞⠁⠈⡃⠀⠀⠀⠀⢘⠁⠈⢳⠀⠀⠀⢸⡇
+// ⠀⠈⢷⣄⠀⠀⠙⠦⠌⠑⠢⠤⠔⠊⠁⢠⠎⠀⠀⣠⡾⠁
+// ⠀⠀⠀⠈⠛⠲⠤⣤⣀⣀⣀⣀⣠⣤⣚⣡⠤⠖⠛⠁
+

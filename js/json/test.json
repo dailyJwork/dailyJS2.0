@@ -1,0 +1,8 @@
+{"name" : "Max",
+ "age": 23,
+ "hobbys": [
+    {"Coding": "code", "Music":"hip-hop"}, 
+    {"Travaling": true, "Drugs": false}
+],
+ "IsAdminHere": true
+}
