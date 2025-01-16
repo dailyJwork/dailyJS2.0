@@ -12,13 +12,55 @@ body {
   flex-direction: column;
 }
 
-.textarea{
-  resize: none;
-}
-
-.feedback-form{
+.casino-game{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.casino-item{
+  width: 100px;
+  height: 100px;
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-casino-btn{
+  font-family: fantasy;
   margin-top: 20px;
+  width: 80px;
+  height: 50px;
+  border-radius: 4px;
+  color: blueviolet;
+  background-color:darksalmon;
+  border: 1px solid pink;
+  cursor: pointer;
+}
+
+.start-casino-btn:hover{
+  color: darkmagenta;
+  background-color: yellowgreen;
+}
+
+.casino-item{
+  border-radius: 40px;
+  background-color: pink;
+}
+
+.casino-result{
+  font-family: fantasy;
+  color: darkorchid;
+}
+
+.promise-title{
+  font-family: fantasy;
+  margin-top: 40px;
+  color: purple;
+}
+
+.test{
+  margin-top: 100px;
 }

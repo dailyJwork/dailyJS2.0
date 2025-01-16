@@ -1,6 +1,4 @@
-ITS MY PRACTICE WITH JS 
 
-HAVE FUN ^^^^^
 
 ⠀⠀⠀⠀⡏⢢⡁⠂⠤⣀⣀⣀⣀⣀ ⠤⠐⢈⡔⢹
 ⠀⠀⠀⠀⢿⡀⠙⠆⠀⠉⠀⠀⠀⠀⠉⠀⠰⠋⢀⡿

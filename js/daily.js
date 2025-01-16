@@ -2493,7 +2493,6 @@
 // console.log(countSmileys([':)',':(',':D',':O',':;']     ));
 // console.log(countSmileys([';]', ':[', ';*', ':$', ';-D']));
 
-
 /// import / export
 // named import
 // import { sayHi, sum } from "./practice/9localStorage.js";
@@ -2522,3 +2521,130 @@
 // ⠀⠈⢷⣄⠀⠀⠙⠦⠌⠑⠢⠤⠔⠊⠁⢠⠎⠀⠀⣠⡾⠁
 // ⠀⠀⠀⠈⠛⠲⠤⣤⣀⣀⣀⣀⣠⣤⣚⣡⠤⠖⠛⠁
 
+/// TASK
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   // TODO
+//   if (distanceToPump / mpg >= fuelLeft) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// console.log(zeroFuel(50, 25, 2));
+
+// TASK
+
+// function sumStr(a, b) {
+//     return (+a + +b).toString();
+// }
+
+// console.log(sumStr("4","5"));
+
+// TASK
+
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//   // your code here
+//   const twiceOldSon = sonYearsOld * 2;
+//   if(twiceOldSon - dadYearsOld <= 0) {
+//     return (twiceOldSon - dadYearsOld) * -1;
+//   } else {return twiceOldSon - dadYearsOld}
+// }
+
+// console.log(twiceAsOld(51,19))
+
+//// TASK COUNTER
+
+// const counterValueText = document.querySelector(".couneter-value");
+// const plusBtn = document.querySelector(".counterPlus");
+// const minusBtn = document.querySelector(".counterMinus");
+// let value = 0;
+
+// plusBtn.addEventListener("click", () => {
+//     value += 1;
+//     counterValueText.textContent = value;
+// });
+
+// minusBtn.addEventListener("click", () => {
+//     value -= 1;
+//     counterValueText.textContent = value;
+// });
+
+/// TASK
+// function getMiddle(s) {
+//   //Code goes here!
+//     const array = Array.from(s);
+//     if(array.length % 2 === 0) {
+//         return [array[array.length / 2 - 1], array[array.length / 2]].join("")
+//     } else if(array.length % 2 !== 0) {
+//         return array[(array.length - 1) / 2]
+//     }
+// }
+
+// console.log(getMiddle("test"));
+
+//// TASK
+
+// function getDivisorsCnt(n) {
+//   // todo
+//   const result = [];
+//   for(let i = 1; i <= n; i++) {
+//     if(n % i === 0) {
+//         result.push(i)
+//     }
+//   }
+//   return result.length
+// }
+
+// console.log(getDivisorsCnt(11));
+
+/// TASK
+
+// function bmi(weight, height) {
+//   const bmi = weight / height **2;
+//   if(bmi <= 18.5) {return "Underweight"} else
+//   if(bmi <= 25.0 && bmi > 18.5) {return "Normal"} else
+//   if(bmi <= 30.0 && bmi > 25.0) {return "Overweight"} else
+//   if(bmi > 30) {return "Obese"}
+// }
+
+// console.log(bmi(100, 1.80));
+
+/// TASK
+// const areaOrPerimeter = function (l, w) {
+//   // Return your answer
+//   if(l === w) {return l * w} else {return l * 2 + w * 2}
+// };
+
+// TASK
+
+// function pipeFix(numbers){
+//     let first = numbers[0];
+//     let last = numbers[numbers.length - 1];
+//     const result = [];
+//     for(let i = first; i <= last; i++) {
+//         result.push(i)
+//     }
+//     return result;
+// }
+
+// console.log(pipeFix([1,2,3,5,6,8,9]));
+
+//// TASK
+
+// function longest(s1, s2) {
+//   // your code
+//   const result = [];
+//   const str = s1 + s2;
+//   const array = str.split("");
+//   for(let i = 0; i < array.length; i++) {
+//     if(array.indexOf(array[i]) === i){
+//         result.push(array[i]);
+//     }
+//   }
+//   return result.sort().join("");
+  
+// }
+
+// console.log(longest("aretheyhere", "yestheyarehere"));
